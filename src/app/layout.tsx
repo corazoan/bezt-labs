@@ -19,7 +19,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${lato.className} antialiased`}>{children}</body>
+      <body className={`${lato.className} antialiased`}>
+        <div className="md:w-[375px] w-full h-full md:h-[812px] mx-auto ">
+          {children}
+        </div>
+      </body>
     </html>
   );
 }
